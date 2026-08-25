@@ -14,7 +14,14 @@ public class App {
         Linguagem preferencia3 = new Linguagem("C", 1);
         programador1.setLinguagem_3(preferencia3);
 
+        Programador programador2 = new Programador("Ciclano", "024.256.354-98", "Fortaleza");
+        Linguagem preferencia11 = new Linguagem("C", 2 );
+        programador2.setLinguagem_1(preferencia11);
 
+        Comparar.compararTempoExperiencia(programador1, programador2, "C");
+        Comparar.compararTempoExperiencia(programador1, programador2, "python");
+        
+        
 
     }
 }
