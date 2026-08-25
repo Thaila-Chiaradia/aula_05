@@ -6,8 +6,15 @@ public class App {
 
         System.out.println("O funcionario " + funcionario1.getNome() + " com CPF " + funcionario1.getCpf() + " é da Filial de " + funcionario1.getFilial());
 
-        Programador programador1 = new Programador("fulano", "256.234.234-04", "São Paulo", 10000, "java");
+        Programador programador1 = new Programador("Fulano", "504.403.432.222-00", "São Paulo");
+        Linguagem preferencia1 = new Linguagem("python", 2);
+        programador1.setLinguagem_1(preferencia1);
+        Linguagem preferencia2 = new Linguagem("javascript", 1);
+        programador1.setLinguagem_2(preferencia2);
+        Linguagem preferencia3 = new Linguagem("C", 1);
+        programador1.setLinguagem_3(preferencia3);
 
-        System.out.println("\n\nO programador " + programador1.getNome() + " com CPF " + programador1.getCpf() + " é da Filial de " + programador1.getFilial() + " utiliza a linguagem " + programador1.getlinguagem() + " e ganha R$"+ programador1.getSalario());
+
+
     }
 }
